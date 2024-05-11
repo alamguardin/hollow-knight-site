@@ -6,3 +6,71 @@
     font-size: 14px;
     font-family: 'Satoshi', sans-serif;
 }
+
+/* General Styles */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+     text-transform: uppercase;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1120px;
+    width: 90%;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    min-width: 12.5rem;
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    background: var(--white);
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--black);
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/hero-background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 160px 100px rgba(0,0,0,0.75);
+}
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__brand img {
+    max-width: 18.75rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(29deg) brightness(103%) contrast(102%);
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero__content h1 {
+    font-size: 1.5rem;
+    color: var(--white);
+}
