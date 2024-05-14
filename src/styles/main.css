@@ -40,6 +40,35 @@ h1, h2 {
     color: var(--black);
 }
 
+.social__list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.social__item a {
+    font-size: 18px;
+    color: var(--white);
+}
+
+/* Navbar Component */
+.navbar {
+    max-width: 1120px;
+    width: 90%;
+    margin: auto;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__brand svg {
+    width: 3rem;
+    fill: var(--white);
+    color: var(--white);
+}
+
 /* Hero Section */
 .hero {
     width: 100%;
@@ -52,7 +81,7 @@ h1, h2 {
 }
 
 .hero .container {
-    height: 100%;
+    height: calc(100% - 6rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
